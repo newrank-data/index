@@ -4,9 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>新榜数据工具目录</title>
+  <title>数据工具目录</title>
 </head>
+<style>
+ul.project {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul.project>li {
+  display: block;
+  width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  text-align: center;
+}
+a {
+  color: rgba(0, 0, 0, 0.85);
+}
+.row-center {
+  display: flex;
+  justify-content: center;
+}
+.row-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+</style>
 <body>
-  <h1>Tool Index</h1>
+  <div class="row-center">
+    <div style="width: 800px; margin-top: 40px;">
+      <h2>项目</h2>
+      <ul class="row-between project">
+        <li style="background-color: rgba(217, 51, 140, 0.45);">
+          <h3><a href="https://cvrm.netlify.com" target="_blank">CVRM 日报生成工具</a></h3>
+          <p>代码仓库：<a href="https://github.com/newrank-data/cvrm" target="_blank">前端</a></p>
+        </li>
+        <li style="background-color:rgba(253, 140, 37, 0.45);">
+          <h3><a href="https://nri.netlify.com" target="_blank">新榜指数计算工具</a></h3>
+          <p>代码仓库：<a href="https://github.com/newrank-data/nri" target="_blank">前端</a></p>
+        </li>
+        <li style="background-color:rgba(253, 140, 37, 0.45);">
+          <h3><a href="https://nr-impress.netlify.com" target="_blank">曝光量计算工具</a></h3>
+          <p>代码仓库：<a href="https://github.com/newrank-data/impress" target="_blank">前端</a> | <a href="https://github.com/newrank-data/impress-api" target="_blank">后端</a></p>
+        </li>
+      </ul>
+      <br>
+      <ul class="row-between project">
+        <li style="background-color:rgba(230, 37, 46, 0.45);">
+          <h3><a href="https://wcm.netlify.com/" target="_blank">微博评论监控工具</a></h3>
+          <p>代码仓库：<a href="https://github.com/newrank-data/wcm" target="_blank">前端</a> | <a href="https://github.com/newrank-data/wcm-api" target="_blank">后端</a></p>
+        </li>
+        <li style="background-color:rgba(0, 82, 147, 0.45);">
+          <h3>西藏月/季报数据统计工具</h3>
+          <p>代码仓库：<a href="https://github.com/newrank-data/tibet" target="_blank">脚本</a></p>
+        </li>
+        <li style="background-color:rgba(142, 195, 28, 0.45);">
+          <h3>EVCARD 月报数据处理工具</h3>
+          <p>代码仓库：<a href="https://github.com/newrank-data/evcard" target="_blank">脚本</a></p>
+        </li>
+      </ul>
+      <br>
+      <ul class="row-between project">
+        <li style="background-color:rgba(128, 128, 128, 0.45);">
+          <h3><a href="https://nr-kol.herokuapp.com" target="_blank">KOL 资料整理工具</a></h3>
+          <p>代码仓库：<a href="https://github.com/newrank-data/kol.git" target="_blank">前端 + 后端</a></p>
+        </li>
+        <li style="background-color:rgba(230, 37, 46, 0.65);">
+          <h3><a href="https://nr-huginn.herokuapp.com" target="_blank">自动任务工具</a></h3>
+          <p>运行任务：天猫官微定时抓取</p>
+        </li>
+      </ul>
+      <br>
+      <h2>技术栈</h2>
+      <div class="row-between">
+        <div>
+          <h4>前端</h4>
+          <ul>
+            <li>编程语言：HTML/CSS/JavaScript</li>
+            <li>框架：Vue</li>
+            <li>UI 组件库：Ant Design</li>
+          </ul>
+        </div>
+        <div>
+          <h4>后端</h4>
+          <ul>
+            <li>编程语言：JavaScript</li>
+            <li>框架：Express</li>
+            <li>数据库：线上 MongoDB（mlab）</li>
+          </ul>
+        </div>
+        <div>
+          <h4>脚本</h4>
+          <ul>
+            <li>编程语言：Python</li>
+            <li>数据库：本地 MongoDB</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-between">
+        <div>
+          <h4>其他</h4>
+          <ul>
+            <li>代码托管：GitHub</li>
+            <li>静态应用托管：netlify</li>
+            <li>动态应用托管：Heroku</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
